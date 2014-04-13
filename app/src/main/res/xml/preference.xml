@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="App data">
+    <Preference
+      android:id="@+id/preference_app_start_time"
+      android:selectable="false"
+      android:title="Time last start app"/>
+    <Preference
+      android:id="@+id/preference_app_stop_time"
+      android:selectable="false"
+      android:title="Time last stop app"/>
+  </PreferenceCategory>
+  <PreferenceCategory android:title="Selectable options">
+    <ListPreference
+      android:id="@+id/preference_destinations_image"
+      android:dialogTitle="Destinations"
+      android:entries="@array/image_destination_names"
+      android:entryValues="@array/image_destination_names"
+      android:summary="Destination, where from the images are displayed"
+      android:title="Destination to images"/>
+    <ListPreference
+      android:id="@+id/preference_animation_names"
+      android:dialogTitle="Animations"
+      android:entries="@array/animations_names"
+      android:entryValues="@array/animations_names"
+      android:summary="Animation transitions between slides"
+      android:title="Animations"/>
+  </PreferenceCategory>
+  <PreferenceCategory android:title="Delay between change image">
+    <SeekBarPreference
+      android:id="@+id/preference_delay_seek_bar"
+      android:defaultValue="25"
+      android:max="60"/>
+  </PreferenceCategory>
+</PreferenceScreen>

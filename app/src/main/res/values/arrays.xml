@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="image_destination_names">
+    <item>Built-in memory</item>
+    <item>SD</item>
+  </string-array>
+  <string-array name="animations_names">
+    <item>Fade-in/Fade-out</item>
+    <item>Slide-in/Slide-out</item>
+  </string-array>
+</resources>
